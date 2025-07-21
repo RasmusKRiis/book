@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "scripts": {
     "build": "echo 'No build step' && exit 0",
-    "validate": "node scripts/validateBooks.js"
+    "validate": "node scripts/validateBooks.js",
+    "bookmeta": "netlify functions:serve fetchBookMeta.js"
   },
   "dependencies": {
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "cloudinary": "^1.41.0",
+    "busboy": "^1.6.0"
   },
   "devDependencies": {
-    "ajv": "^8.12.0"
+    "ajv": "^8.12.0",
+    "google-books-node": "^1.0.0",
+    "openlibrary-meta": "^1.0.0"
   }
 }
